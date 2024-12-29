@@ -32,12 +32,11 @@
     };
 
     macros {
-        macro_test: macro_test {
+        new_macro1: new_macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(T)>, <&macro_tap>, <&kp T &kp E &kp S &kp T>;
-
-            label = "MACRO_TEST";
+            bindings = <&kp LC(T) &kp T &kp E &kp S &kp T>;
+            label = "NEW_MACRO1";
         };
     };
 
